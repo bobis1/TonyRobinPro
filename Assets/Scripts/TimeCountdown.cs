@@ -22,5 +22,9 @@ public class TimeCountdown : MonoBehaviour
 
         lapTime.text = Mathf.Round(totalLapTime).ToString();
         startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
+        if(totalCountdownTime == 0)
+        {
+            Debug.Log("start");
+        }
     }
 }
