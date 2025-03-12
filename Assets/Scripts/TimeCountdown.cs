@@ -19,5 +19,8 @@ public class TimeCountdown : MonoBehaviour
     {
         totalLapTime -= Time.deltaTime;
         totalCountdownTime -= Time.deltaTime;
+
+        lapTime.text = Mathf.Round(totalLapTime).ToString();
+        startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
     }
 }
