@@ -1059,7 +1059,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lapTime: {fileID: 1205135448}
   startCountdown: {fileID: 807996111}
-  totalLapTime: 70
   totalCountdownTime: 0
 --- !u!4 &1459784850
 Transform:
