@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class TimeCountdown : MonoBehaviour
 {
-    public TextMeshProUGUI lapTime;
     public TextMeshProUGUI startCountdown;
+    public TextMeshProUGUI lapTime;
 
     public float totalLapTime;
     public float totalCountdownTime;
