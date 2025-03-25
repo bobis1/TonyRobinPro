@@ -34,10 +34,10 @@ public class TimeCountdown : MonoBehaviour
             totalLapTime -= Time.deltaTime;
             startCountdown.text = totalLapTime;
             codeySpeed = 0;
-        } else if (totalCountdownTime =< 0) { 
-            startCountdown.text = ""
+        } else if (totalCountdownTime =< 0) {
+            startCountdown.text = "";
             totalLapTime -= Time.deltaTime;
-            codeySpeed = 15
+            codeySpeed = 15;
 
         }
         if(totalCountdownTime = 0)
