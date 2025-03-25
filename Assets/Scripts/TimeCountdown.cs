@@ -11,6 +11,7 @@ public class TimeCountdown : MonoBehaviour
 
     public float totalLapTime;
     public float totalCountdownTime;
+    public float codeySpeed;
     // Start is called before the first frame update
   
 
@@ -22,9 +23,26 @@ public class TimeCountdown : MonoBehaviour
 
         lapTime.text = Mathf.Round(totalLapTime).ToString();
         startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
+
         if(totalCountdownTime == 0)
         {
             Debug.Log("start");
+        }
+
+        if (totalCountdownTime > 0)
+        {
+            totalLapTime -= Time.deltaTime;
+            startCountdown.text = totalLapTime;
+            codeySpeed = 0;
+        } else if (totalCountdownTime =< 0) { 
+            startCountdown.text = ""
+            totalLapTime -= Time.deltaTime;
+            codeySpeed = 15
+
+        }
+        if(totalCountdownTime = 0)
+        {
+            debug.log("Time is up");
         }
     }
 }
