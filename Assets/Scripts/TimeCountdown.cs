@@ -32,17 +32,17 @@ public class TimeCountdown : MonoBehaviour
         if (totalCountdownTime > 0)
         {
             totalLapTime -= Time.deltaTime;
-            startCountdown.text = totalLapTime;
+            startCountdown.text = totalLapTime.ToString();
             codeySpeed = 0;
-        } else if (totalCountdownTime =< 0) {
+        } else if (totalCountdownTime <= 0) {
             startCountdown.text = "";
             totalLapTime -= Time.deltaTime;
             codeySpeed = 15;
 
         }
-        if(totalCountdownTime = 0)
+        if(totalCountdownTime == 0)
         {
-            debug.log("Time is up");
+            Debug.Log("Time is up");
         }
     }
 }
