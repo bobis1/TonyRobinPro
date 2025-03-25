@@ -723,7 +723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 477, y: 292}
+  m_AnchoredPosition: {x: 401.5, y: 237.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &565278719
@@ -1497,7 +1497,7 @@ GameObject:
   - component: {fileID: 807996112}
   - component: {fileID: 807996111}
   m_Layer: 5
-  m_Name: Countdown
+  m_Name: LapTime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2239,7 +2239,7 @@ GameObject:
   - component: {fileID: 1205135447}
   - component: {fileID: 1205135448}
   m_Layer: 5
-  m_Name: LapTime
+  m_Name: CountdownTime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2536,10 +2536,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b18d9525e3f369d4a9d73eea3d755bd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCountdown: {fileID: 807996111}
-  lapTime: {fileID: 1205135448}
-  totalLapTime: 3
-  totalCountdownTime: 70
+  startCountdown: {fileID: 1205135448}
+  lapTime: {fileID: 807996111}
+  totalLapTime: 70
+  totalCountdownTime: 3
+  codeySpeed: 0
 --- !u!4 &1459784850
 Transform:
   m_ObjectHideFlags: 0
