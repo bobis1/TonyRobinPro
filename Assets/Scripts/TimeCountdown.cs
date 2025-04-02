@@ -1,19 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class TimeCountdown : MonoBehaviour
 {
     public TextMeshProUGUI startCountdown;
     public TextMeshProUGUI lapTime;
+    public CodeyMove player;
+
 
     public float totalLapTime;
     public float totalCountdownTime;
-    public float codeySpeed;
+    public GameObject playerObj;
     // Start is called before the first frame update
-  
+    private void Start()
+    {
+        playerObj = GameObject.Find("playermodel");
+        player = playerObj.GetComponent<CodeyMove>();
+        player.speed = 0f;
+        Debug.Log("hehehhehehhehhehehe");
+    }
 
     // Update is called once per frame
     void Update()
@@ -23,25 +33,28 @@ public class TimeCountdown : MonoBehaviour
 
         lapTime.text = Mathf.Round(totalLapTime).ToString();
         startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
+        startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
 
         if(totalCountdownTime == 0)
         {
             Debug.Log("start");
+            Console.WriteLine("start");
         }
 
         if (totalCountdownTime > 0)
         {
             totalLapTime -= Time.deltaTime;
-            startCountdown.text = totalLapTime.ToString();
-            codeySpeed = 0;
+            startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
+            player.speed = 0f;
         } else if (totalCountdownTime <= 0) {
             startCountdown.text = "";
             totalLapTime -= Time.deltaTime;
-            codeySpeed = 15;
+            player.speed = 15f;
 
         }
         if(totalCountdownTime == 0)
         {
+            Console.WriteLine("halt");
             Debug.Log("Time is up");
         }
     }
