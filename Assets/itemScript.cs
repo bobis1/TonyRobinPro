@@ -10,15 +10,16 @@ public class itemScript : MonoBehaviour
 
     public int modifyXposition;
     public int modifyZposition;
+    public int modifyYposition;
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < numberOfBoxes; i++)
         {
              GameObject itemBoxClone = Instantiate(itemBox, new Vector3(
-                 transform.position.x + modifyXposition,
-                 transform.position.y,
-                 transform.position.z + modifyZposition
+                 transform.position.x + modifyXposition * i,
+                 transform.position.y+ modifyYposition,
+                 transform.position.z + modifyZposition * i
                  ), 
                  transform.rotation);
         }
