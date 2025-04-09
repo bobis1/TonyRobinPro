@@ -7,13 +7,20 @@ public class itemScript : MonoBehaviour
 {
     public GameObject itemBox;
     public int numberOfBoxes;
-    public GameObject spawn;
+
+    public int modifyXposition;
+    public int modifyZposition;
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < numberOfBoxes; i++)
         {
-             GameObject itemBoxClone = Instantiate(itemBox, transform.position, transform.rotation);
+             GameObject itemBoxClone = Instantiate(itemBox, new Vector3(
+                 transform.position.x + modifyXposition,
+                 transform.position.y,
+                 transform.position.z + modifyZposition
+                 ), 
+                 transform.rotation);
         }
     }
 
