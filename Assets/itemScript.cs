@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,10 +25,22 @@ public class itemScript : MonoBehaviour
                  transform.rotation);
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            gameObject.SetActive(false);
+            Console.WriteLine("Items collected");
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Invoke("itemBoxRespawn", 10);
+    }
+    private void itemBoxRespawn()
+    {
+        gameObject.SetActive(true);
     }
 }

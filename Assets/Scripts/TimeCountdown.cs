@@ -19,7 +19,7 @@ public class TimeCountdown : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        playerObj = GameObject.Find("playermodel");
+        playerObj = GameObject.Find("Small child");
         player = playerObj.GetComponent<CodeyMove>();
         player.speed = 0f;
         Debug.Log("hehehhehehhehhehehe");
