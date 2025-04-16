@@ -25,9 +25,9 @@ public class itemScript : MonoBehaviour
                  transform.rotation);
         }
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollision(Collision collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             gameObject.SetActive(false);
             Console.WriteLine("Items collected");
