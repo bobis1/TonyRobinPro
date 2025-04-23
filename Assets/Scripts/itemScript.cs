@@ -12,6 +12,7 @@ public class itemScript : MonoBehaviour
     public int modifyXposition;
     public int modifyZposition;
     public int modifyYposition;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,15 +26,7 @@ public class itemScript : MonoBehaviour
                  transform.rotation);
         }
     }
-    private void OnCollision(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            gameObject.SetActive(false);
-            Console.WriteLine("Items collected");
-        }
-    }
-
+   
     // Update is called once per frame
     void Update()
     {
@@ -41,6 +34,7 @@ public class itemScript : MonoBehaviour
     }
     private void itemBoxRespawn()
     {
+        Console.WriteLine("Item Box Respawned");
         gameObject.SetActive(true);
     }
 }
