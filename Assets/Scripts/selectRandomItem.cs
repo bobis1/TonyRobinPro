@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,16 +15,23 @@ public class selectRandomItem : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-            if(collision.gameObject.tag == "itemBoxes")
+        Console.WriteLine("Collision Works");
+            if(collision.gameObject.tag == "itemBox")
         {
-            randomNumberInList = Random.Range(0, powerupList.Count);
+            randomNumberInList = UnityEngine.Random.Range(0, powerupList.Count);
             chosenPowerup = powerupList[randomNumberInList];
+            Console.WriteLine("Tag detection works");
+            
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Console.WriteLine("Key input works");
+            Instantiate(chosenPowerup);
+        }
     }
 }

@@ -1598,7 +1598,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerupList:
   - {fileID: 440447587568026640, guid: b6959c5071d57ec45b857397ac87df91, type: 3}
-  - {fileID: 0}
+  - {fileID: 7140707812271866059, guid: fb044312ee35a6d4db772908bbd4fffa, type: 3}
+  - {fileID: 8422970501432761211, guid: 45f18d98733f23641a20bd2af13c2588, type: 3}
   randomNumberInList: 0
   chosenPowerup: {fileID: 0}
 --- !u!1001 &664219091
@@ -8883,6 +8884,6 @@ SceneRoots:
   - {fileID: 1720263209}
   - {fileID: 76427182}
   - {fileID: 621729883}
-  - {fileID: 7427905653119069463}
   - {fileID: 1077770244}
+  - {fileID: 7427905653119069463}
   - {fileID: 3235458005431604907}
