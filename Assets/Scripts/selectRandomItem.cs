@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class selectRandomItem : MonoBehaviour
 {
-    public List<GameObject> powerupList;
+    public List<PowerIDScript> powerupList;
     public int randomNumberInList;
-    public GameObject chosenPowerup;
+    public PowerIDScript chosenPowerup;
     // Start is called before the first frame update
     void Start()
     {

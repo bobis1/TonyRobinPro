@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PowerIDScript : MonoBehaviour
 {
-    enum PowerUpType
+    public enum PowerUpType
     {
         Bomb,Rocket,BigChild
     }
-
+    public PowerUpType type = PowerUpType.Bomb;
     // Start is called before the first frame update
     void Start()
     {
