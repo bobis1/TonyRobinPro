@@ -15,12 +15,12 @@ public class selectRandomItem : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Console.WriteLine("Collision Works");
-            if(collision.gameObject.tag == "itemBox")
+        Debug.Log("The collision works");
+        if(collision.gameObject.tag == "itemBox")
         {
             randomNumberInList = UnityEngine.Random.Range(0, powerupList.Count);
             chosenPowerup = powerupList[randomNumberInList];
-            Console.WriteLine("Tag detection works");
+                 Debug.Log("Tag detection works");
             
         }
     }
@@ -30,8 +30,11 @@ public class selectRandomItem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Console.WriteLine("Key input works");
-            Instantiate(chosenPowerup);
+            Debug.Log("Key input works");
+            if(randomNumberInList == 2)
+            {
+                Instantiate(chosenPowerup, transform);
+            }
         }
     }
 }
