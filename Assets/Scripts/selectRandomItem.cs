@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class selectRandomItem : MonoBehaviour
 {
-    public List<PowerIDScript> powerupList;
+    public List<PowerUp> powerupList;
     public int randomNumberInList;
-    public PowerIDScript chosenPowerup;
+    public PowerUp powerUp;
+    public Vector3 spawnPosition;
+    public GameObject powerUpSelectingType;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +21,8 @@ public class selectRandomItem : MonoBehaviour
         if(collision.gameObject.tag == "itemBox")
         {
             randomNumberInList = UnityEngine.Random.Range(0, powerupList.Count);
-            chosenPowerup = powerupList[randomNumberInList];
-                 Debug.Log("Tag detection works");
+            powerUpSelectingType = powerupList[randomNumberInList].gameObject;
+            Debug.Log("Tag detection works");
             
         }
     }
@@ -31,9 +33,16 @@ public class selectRandomItem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Key input works");
-            if(randomNumberInList == 2)
+            if(powerUp.type == PowerUpType.BigChild)
             {
-                Instantiate(chosenPowerup, transform);
+                Instantiate(powerUpSelectingType, transform);
+            }
+            if (powerUp.type == PowerUpType.Bomb) {
+                Instantiate(powerUpSelectingType, spawnPosition, transform.rotation);
+            }
+            if (powerUp.type == PowerUpType.Rocket) {
+
+                Instantiate(powerUpSelectingType, spawnPosition, transform.rotation);
             }
         }
     }

@@ -78,6 +78,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3f8d9062896acea4bb26b1332e9b4509, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6752566908626593127}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3f8d9062896acea4bb26b1332e9b4509, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8479807763886987082}
   m_SourcePrefab: {fileID: 100100000, guid: 3f8d9062896acea4bb26b1332e9b4509, type: 3}
 --- !u!1 &7140707812271866059 stripped
 GameObject:
@@ -4882,3 +4885,16 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &8479807763886987082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7140707812271866059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b881d4a72a6fc4a922eb2893d07fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1

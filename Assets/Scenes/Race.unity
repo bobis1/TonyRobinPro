@@ -1426,6 +1426,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8793006650458000824, guid: c34d5dcb40560624487c27c137604850, type: 3}
   m_PrefabInstance: {fileID: 8133005052292277189}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &621729891
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193440584}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &664219091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8701,6 +8722,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2827676459716556247, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: bombRocketTransform
+      value: 
+      objectReference: {fileID: 193440584}
+    - target: {fileID: 2827676459716556247, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: powerupList.Array.data[0]
+      value: 
+      objectReference: {fileID: 8639068482019283963, guid: 45f18d98733f23641a20bd2af13c2588, type: 3}
     - target: {fileID: 2907322960810508011, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: m_Name
       value: Small child
@@ -8748,7 +8777,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2907322960810508011, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 621729891}
   m_SourcePrefab: {fileID: 100100000, guid: c34d5dcb40560624487c27c137604850, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
