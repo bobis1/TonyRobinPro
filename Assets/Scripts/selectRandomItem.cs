@@ -7,9 +7,9 @@ public class selectRandomItem : MonoBehaviour
 {
     public List<PowerUp> powerupList;
     public int randomNumberInList;
-    public PowerUp powerUp;
+    public PowerUp powerUpSelected;
     public Vector3 spawnPosition;
-    public GameObject powerUpSelectingType;
+    public bool canUsePowerup;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +21,11 @@ public class selectRandomItem : MonoBehaviour
         if(collision.gameObject.tag == "itemBox")
         {
             randomNumberInList = UnityEngine.Random.Range(0, powerupList.Count);
-            powerUpSelectingType = powerupList[randomNumberInList].gameObject;
-            Debug.Log("Tag detection works");
+            powerUpSelected = powerupList[randomNumberInList];
+            spawnPosition.x = transform.position.x;
+            spawnPosition.y = transform.position.y;
+            spawnPosition.z = transform.position.z-1;
+            canUsePowerup = true;
             
         }
     }
@@ -33,16 +36,27 @@ public class selectRandomItem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Key input works");
-            if(powerUp.type == PowerUpType.BigChild)
+            if(powerUpSelected.type == PowerUpType.BigChild)
             {
-                Instantiate(powerUpSelectingType, transform);
+                if (canUsePowerup == true)
+                {
+                    Instantiate(powerUpSelected, transform);
+                    canUsePowerup = false;
+                }
             }
-            if (powerUp.type == PowerUpType.Bomb) {
-                Instantiate(powerUpSelectingType, spawnPosition, transform.rotation);
+            if (powerUpSelected.type == PowerUpType.Bomb) {
+                if(canUsePowerup == true)
+                {
+                    Instantiate(powerUpSelected, spawnPosition, transform.rotation);
+                    canUsePowerup = false;
+                }
             }
-            if (powerUp.type == PowerUpType.Rocket) {
-
-                Instantiate(powerUpSelectingType, spawnPosition, transform.rotation);
+            if (powerUpSelected.type == PowerUpType.Rocket) {
+                if (canUsePowerup == true)
+                {
+                    Instantiate(powerUpSelected, spawnPosition, transform.rotation);
+                    canUsePowerup = false;
+                }
             }
         }
     }

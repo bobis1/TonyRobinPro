@@ -6,6 +6,7 @@ TagManager:
   tags:
   - itemBox
   - Big Child
+  - terrain
   layers:
   - Default
   - TransparentFX
