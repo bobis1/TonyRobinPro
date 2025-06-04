@@ -73,6 +73,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3f8d9062896acea4bb26b1332e9b4509, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: -917721505655657133}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3f8d9062896acea4bb26b1332e9b4509, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5584628296663905320}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3f8d9062896acea4bb26b1332e9b4509, type: 3}
@@ -81,12 +84,42 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3f8d9062896acea4bb26b1332e9b4509, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8479807763886987082}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3f8d9062896acea4bb26b1332e9b4509, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8553165625321305811}
   m_SourcePrefab: {fileID: 100100000, guid: 3f8d9062896acea4bb26b1332e9b4509, type: 3}
 --- !u!1 &7140707812271866059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3f8d9062896acea4bb26b1332e9b4509, type: 3}
   m_PrefabInstance: {fileID: 8059625006904081818}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &-917721505655657133
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7140707812271866059}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!199 &5584628296663905320
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4898,3 +4931,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+--- !u!114 &-8553165625321305811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7140707812271866059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ea00693fd799743a75e1f9e1b41526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impulse: {x: 1, y: 1, z: 0}

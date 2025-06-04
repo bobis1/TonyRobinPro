@@ -7,6 +7,7 @@ TagManager:
   - itemBox
   - Big Child
   - terrain
+  - Obstacle
   layers:
   - Default
   - TransparentFX
