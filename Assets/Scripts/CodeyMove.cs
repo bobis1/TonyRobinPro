@@ -15,6 +15,7 @@ public class CodeyMove : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        speed = 100f;
     }
     void Update()
     {

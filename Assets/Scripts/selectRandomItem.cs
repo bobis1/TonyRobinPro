@@ -10,10 +10,12 @@ public class selectRandomItem : MonoBehaviour
     public PowerUp powerUpSelected;
     public Vector3 spawnPosition;
     public bool canUsePowerup;
+    //public float speed;
+    public CodeyMove codeyMove;
     // Start is called before the first frame update
     void Start()
     {
-        
+        codeyMove = GetComponent<CodeyMove>();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -26,38 +28,45 @@ public class selectRandomItem : MonoBehaviour
             spawnPosition.y = transform.position.y;
             spawnPosition.z = transform.position.z-1;
             canUsePowerup = true;
-            
+
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!canUsePowerup) return;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Key input works");
             if(powerUpSelected.type == PowerUpType.BigChild)
             {
-                if (canUsePowerup == true)
-                {
-                    Instantiate(powerUpSelected, transform);
-                    canUsePowerup = false;
-                }
+                Instantiate(powerUpSelected, transform);
+                Debug.Log("The speed should change now");
+                codeyMove.speed = 100f;
+                canUsePowerup = false;
+                StartCoroutine(SetSpeedToNormal());
+                //this.GetComponent<CodeyMove>().speed = 40f;
+
             }
             if (powerUpSelected.type == PowerUpType.Bomb) {
-                if(canUsePowerup == true)
-                {
-                    Instantiate(powerUpSelected, spawnPosition, transform.rotation);
-                    canUsePowerup = false;
-                }
+
+                Instantiate(powerUpSelected, spawnPosition, transform.rotation);
+                canUsePowerup = false;
+
             }
             if (powerUpSelected.type == PowerUpType.Rocket) {
-                if (canUsePowerup == true)
-                {
-                    Instantiate(powerUpSelected, spawnPosition, transform.rotation);
-                    canUsePowerup = false;
-                }
+
+                Instantiate(powerUpSelected, spawnPosition, transform.rotation);
+                canUsePowerup = false;
+
             }
         }
+    }
+     IEnumerator SetSpeedToNormal()
+    {
+        yield return new WaitForSeconds(30);
+        //codeyMove.speed = 15f;
     }
 }

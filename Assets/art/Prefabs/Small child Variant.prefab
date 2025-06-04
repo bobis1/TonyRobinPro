@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3149b76bf3e4b8d98c2e9e1c53e668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 40
   running: 0
   canMove: 1
   move: {x: 0, y: 0, z: 0}
@@ -181,4 +181,6 @@ MonoBehaviour:
   - {fileID: 7140707812271866059, guid: fb044312ee35a6d4db772908bbd4fffa, type: 3}
   - {fileID: 8422970501432761211, guid: 45f18d98733f23641a20bd2af13c2588, type: 3}
   randomNumberInList: 0
-  chosenPowerup: {fileID: 0}
+  powerUpSelected: {fileID: 0}
+  spawnPosition: {x: 0, y: 0, z: 0}
+  canUsePowerup: 0
