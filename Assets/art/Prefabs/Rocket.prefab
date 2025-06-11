@@ -4946,7 +4946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ea00693fd799743a75e1f9e1b41526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impulse: {x: 0, y: 5, z: 2.5}
+  impulse: {x: 0, y: 5, z: 5}
 --- !u!64 &6531632242719443021
 MeshCollider:
   m_ObjectHideFlags: 0

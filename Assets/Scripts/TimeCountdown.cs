@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class TimeCountdown : MonoBehaviour
@@ -52,10 +54,11 @@ public class TimeCountdown : MonoBehaviour
             player.speed = 15f;
 
         }
-        if(totalCountdownTime == 0)
+
+        bool isLapUp = totalLapTime <= 0;
+        if (isLapUp)
         {
-            Console.WriteLine("halt");
-            Debug.Log("Time is up");
+            SceneManager.LoadScene(0);
         }
     }
 }

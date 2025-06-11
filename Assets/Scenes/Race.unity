@@ -2325,7 +2325,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.028083976, y: -0.0012218037, z: 0.000034326673, w: 0.9996048}
-  m_LocalPosition: {x: 32.39, y: 5.56, z: -8.6}
+  m_LocalPosition: {x: 32.39, y: 5.56, z: -8.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2418,7 +2418,6 @@ Transform:
   - {fileID: 201775969}
   - {fileID: 1563446067}
   - {fileID: 226527990}
-  - {fileID: 1459784850}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &975003729 stripped
@@ -8259,7 +8258,7 @@ MonoBehaviour:
   startCountdown: {fileID: 1205135448}
   lapTime: {fileID: 807996111}
   player: {fileID: 0}
-  totalLapTime: 200
+  totalLapTime: 60
   totalCountdownTime: 3
   playerObj: {fileID: 0}
 --- !u!4 &1459784850
@@ -8271,11 +8270,11 @@ Transform:
   m_GameObject: {fileID: 1459784848}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1090.4824, y: 136.88802, z: -11.080629}
+  m_LocalPosition: {x: 1120.8224, y: 136.62361, z: -19.946978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 972279823}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1459784851
 MonoBehaviour:
@@ -8829,7 +8828,7 @@ Transform:
   m_GameObject: {fileID: 2099188784}
   serializedVersion: 2
   m_LocalRotation: {x: 0.028083976, y: -0.0012218037, z: 0.000034326673, w: 0.9996048}
-  m_LocalPosition: {x: 32.39, y: 5.56, z: -8.6}
+  m_LocalPosition: {x: 32.39, y: 5.56, z: -8.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9077,7 +9076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8793006650458000824, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.72
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 8793006650458000824, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9140,3 +9139,4 @@ SceneRoots:
   - {fileID: 3235458005431604907}
   - {fileID: 453360096}
   - {fileID: 376864342}
+  - {fileID: 1459784850}

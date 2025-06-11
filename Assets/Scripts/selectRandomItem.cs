@@ -24,9 +24,7 @@ public class selectRandomItem : MonoBehaviour
         {
             randomNumberInList = UnityEngine.Random.Range(0, powerupList.Count);
             powerUpSelected = powerupList[randomNumberInList];
-            spawnPosition.x = transform.position.x;
-            spawnPosition.y = transform.position.y;
-            spawnPosition.z = transform.position.z-1;
+
             canUsePowerup = true;
 
         }
@@ -35,6 +33,9 @@ public class selectRandomItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        spawnPosition.x = transform.position.x;
+        spawnPosition.y = transform.position.y;
+        spawnPosition.z = transform.position.z - 1;
         if (!canUsePowerup) return;
 
         if (Input.GetKeyDown(KeyCode.Space))
