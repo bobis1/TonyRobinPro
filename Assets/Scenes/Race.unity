@@ -533,6 +533,7 @@ GameObject:
   - component: {fileID: 226527993}
   - component: {fileID: 226527992}
   - component: {fileID: 226527991}
+  - component: {fileID: 226527994}
   m_Layer: 0
   m_Name: Finish Line
   m_TagString: Untagged
@@ -627,6 +628,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226527989}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &226527994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226527989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaaf487cb71044d4aaba4a46d3fd4074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &249503670
 PrefabInstance:
   m_ObjectHideFlags: 0

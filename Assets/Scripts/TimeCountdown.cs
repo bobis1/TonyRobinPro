@@ -58,7 +58,7 @@ public class TimeCountdown : MonoBehaviour
         bool isLapUp = totalLapTime <= 0;
         if (isLapUp)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 }
