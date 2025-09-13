@@ -17,7 +17,7 @@ public class CodeyMove : MonoBehaviour
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
         speed = 100f;
     }
-    void Update()
+    void FixedUpdate()
     {
        
         if (canMove)
