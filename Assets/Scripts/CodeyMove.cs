@@ -8,7 +8,7 @@ public class CodeyMove : MonoBehaviour
     Animator anim;
     public bool running = false;
     public bool canMove = true;
-    public bool isGrounded = true;
+    public bool isGrounded = false;
     public Vector3 move;
     public float _rotationSpeed = 50f;
     private Rigidbody rb;
