@@ -4,12 +4,15 @@ using UnityEngine;
 public class CodeyMove : MonoBehaviour
 {
     public float speed = 15f;
+    public float playerJump = 10f;
     Animator anim;
     public bool running = false;
     public bool canMove = true;
+    public bool isGrounded = true;
     public Vector3 move;
     public float _rotationSpeed = 50f;
     private Rigidbody rb;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -19,12 +22,12 @@ public class CodeyMove : MonoBehaviour
     }
     void FixedUpdate()
     {
-       
+
         if (canMove)
         {
 
             float vertical = Input.GetAxis("Vertical");
-            float horizontal = Input.GetAxis("Horizontal");            
+            float horizontal = Input.GetAxis("Horizontal");
             Vector3 rotation = new Vector3(0, horizontal * _rotationSpeed * Time.deltaTime, 0);
             move = transform.forward * speed * Time.deltaTime * vertical;
             transform.Rotate(rotation);
@@ -32,6 +35,21 @@ public class CodeyMove : MonoBehaviour
 
             anim.SetBool("isRunning", move != Vector3.zero);
         }
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (isGrounded == true)
+            {
+                rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
+            }
+        }
+
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        isGrounded = true;
+    }
+    private void OisionExit(Collision collision)
+    {
+        isGrounded = false;    
     }
 }

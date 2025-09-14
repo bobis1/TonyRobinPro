@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class spawnMenu : MonoBehaviour
@@ -19,7 +20,19 @@ public class spawnMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (isMenuOpen == false)
+            {
+            menu.SetActive(true);
+            isMenuOpen = true;
+            }
+        else if (isMenuOpen == true)
+            {
+            menu.SetActive(false);
+            isMenuOpen = false;
+            }
+        }
     }
     public void SpawnMenuOpen()
     {
