@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEngine.TestTools.Constraints;
 public class CodeyMove : MonoBehaviour
 {
-    public float speed = 15f;
+    public float speed;
     public float playerJump = 10f;
     Animator anim;
     public bool running = false;
@@ -18,7 +19,7 @@ public class CodeyMove : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
-        speed = 100f;
+        speed = 50f;
     }
     void FixedUpdate()
     {
@@ -44,12 +45,12 @@ public class CodeyMove : MonoBehaviour
         }
 
     }
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         isGrounded = true;
     }
-    private void OisionExit(Collision collision)
+    void OnCollisionExit(Collision collision)
     {
-        isGrounded = false;    
+        isGrounded = false;
     }
 }
