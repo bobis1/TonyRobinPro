@@ -26,9 +26,9 @@ public class coinScript : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             score++;
-            string scoreString = score.ToString();
-            scoreUi.text = scoreString;
         }
+        string scoreString = score.ToString();
+        scoreUi.text = scoreString;
 
     }
 }
