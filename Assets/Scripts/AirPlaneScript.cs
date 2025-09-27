@@ -46,7 +46,7 @@ public class AirPlaneScript : MonoBehaviour
             }
             if(airTime >= 5)
             {
-                coinScript.score += ((int)airTime)/200;
+                coinScript.score += ((int)airTime)/20;
                 string scoreString = coinScript.score.ToString();
                 scoreUi.text = scoreString;
             }
