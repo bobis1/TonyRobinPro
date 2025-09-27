@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SocialPlatforms.Impl;
+using System.Security;
 public class timerSandboxScript : MonoBehaviour
 {
     public TextMeshProUGUI timerUI;
@@ -24,17 +25,18 @@ public class timerSandboxScript : MonoBehaviour
     {
         if (scoreScript.score == coins.Length)
         {
+            int multiplier = 2;
             if (timer >= 60)
             {
-                scoreScript.score = scoreScript.score * 2;
-                string scoreString = scoreScript.score.ToString();
-                scoreUi.text = scoreString;
-                if (timer >= 70)
-                {
-                    scoreScript.score = scoreScript.score * 4;
-                    scoreUi.text = scoreString;
-                }
+                multiplier = 2;
             }
+            if (timer >= 70)
+            {
+                multiplier = 4;
+            }
+            scoreScript.score = scoreScript.score * multiplier;
+            string scoreString = scoreScript.score.ToString();
+            scoreUi.text = scoreString;
         }
         timer -= Time.deltaTime;
         string timerString = timer.ToString();
