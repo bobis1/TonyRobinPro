@@ -1646,7 +1646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  scoreUi: {fileID: 0}
+  scoreUi: {fileID: 1481591103}
 --- !u!1 &705271127
 GameObject:
   m_ObjectHideFlags: 0
@@ -8205,8 +8205,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerUI: {fileID: 387862777}
   coins: []
-  scoreScript: {fileID: 0}
-  timer: 0
+  scoreUi: {fileID: 1481591103}
+  scoreScript: {fileID: 621729903}
+  timer: 70
 --- !u!1 &1481591101
 GameObject:
   m_ObjectHideFlags: 0
@@ -9180,8 +9181,8 @@ GameObject:
   - component: {fileID: 2076150708}
   - component: {fileID: 2076150709}
   m_Layer: 0
-  m_Name: Cylinder
-  m_TagString: Untagged
+  m_Name: coin
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

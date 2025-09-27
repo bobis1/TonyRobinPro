@@ -7,6 +7,7 @@ public class timerSandboxScript : MonoBehaviour
 {
     public TextMeshProUGUI timerUI;
     public GameObject[] coins;
+    public TMP_Text scoreUi;
 
     public coinScript scoreScript;
 
@@ -26,12 +27,17 @@ public class timerSandboxScript : MonoBehaviour
             if (timer >= 60)
             {
                 scoreScript.score = scoreScript.score * 2;
+                string scoreString = scoreScript.score.ToString();
+                scoreUi.text = scoreString;
                 if (timer >= 70)
                 {
                     scoreScript.score = scoreScript.score * 4;
+                    scoreUi.text = scoreString;
                 }
             }
         }
         timer -= Time.deltaTime;
+        string timerString = timer.ToString();
+        timerUI.text = timerString;
     }
 }
