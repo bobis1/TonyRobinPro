@@ -1,21 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class AirPlaneScript : MonoBehaviour
 {
     public GameObject freeBird;
 
-    public AudioSource boomBox;
+    public coinScript coinScript;
+    public TMP_Text scoreUi;
 
+    [Header("Audio")]
+    public AudioSource boomBox;
     public AudioClip freedBirdLoudAudioClip;
     public AudioClip freeBirdAudioClip;
     public float airTime;
     private float volumeControl;
 
     public float groundTime;
-
+    
     public bool isGrounded;
     // Start is called before the first frame update
     void Start()
@@ -38,6 +43,12 @@ public class AirPlaneScript : MonoBehaviour
                 {
                     boomBox.Play();
                 }
+            }
+            if(airTime >= 5)
+            {
+                coinScript.score += ((int)airTime)/200;
+                string scoreString = coinScript.score.ToString();
+                scoreUi.text = scoreString;
             }
         } 
         else

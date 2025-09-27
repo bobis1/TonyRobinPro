@@ -9387,6 +9387,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freeBird: {fileID: 270347729}
+  coinScript: {fileID: 1971392809}
+  scoreUi: {fileID: 448999736}
   boomBox: {fileID: 270347731}
   freedBirdLoudAudioClip: {fileID: 8300000, guid: 23c3d0b1816e4eb44ba729edfb42a0eb, type: 3}
   freeBirdAudioClip: {fileID: 8300000, guid: 557e795694403294594b97364f472715, type: 3}
