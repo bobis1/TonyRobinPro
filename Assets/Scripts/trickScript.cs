@@ -14,9 +14,9 @@ public class trickScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("R"))
+        if (Input.GetKey(KeyCode.R))
         {
-            
+            transform.Rotate(Vector3.forward, Time.deltaTime * 30);
         }
     }
 }
