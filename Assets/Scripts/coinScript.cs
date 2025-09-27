@@ -11,7 +11,7 @@ public class coinScript : MonoBehaviour
     public int score;
     public TMP_Text scoreUi;
     // Start is called before the first frame update
-    void Start()
+        void Start()
     {
 
     }
