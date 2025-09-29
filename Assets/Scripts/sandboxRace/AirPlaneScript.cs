@@ -10,6 +10,7 @@ public class AirPlaneScript : MonoBehaviour
     public GameObject freeBird;
 
     public coinScript coinScript;
+    public trickScript trickScript;
     public TMP_Text scoreUi;
 
     [Header("Audio")]
@@ -44,9 +45,9 @@ public class AirPlaneScript : MonoBehaviour
                     boomBox.Play();
                 }
             }
-            if(airTime >= 5)
+            if(trickScript.isTricking)
             {
-                coinScript.score += ((int)airTime)/20;
+                coinScript.score += ((int)airTime)/2 + 5;
                 string scoreString = coinScript.score.ToString();
                 scoreUi.text = scoreString;
             }

@@ -2333,6 +2333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   freeBird: {fileID: 1182852593}
   coinScript: {fileID: 621729903}
+  trickScript: {fileID: 621729907}
   scoreUi: {fileID: 1481591103}
   boomBox: {fileID: 1182852595}
   freedBirdLoudAudioClip: {fileID: 8300000, guid: 6a48e7609ca65104b914e859f28d3386, type: 3}
@@ -2366,6 +2367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084909c270d655e4da2dcc9a62ae472f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTricking: 0
   player: {fileID: 193440584}
 --- !u!1 &691525292
 GameObject:
@@ -3540,8 +3542,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1254789, y: 0.00000002956678, z: -0.0000000037395633, w: 0.9920963}
-  m_LocalPosition: {x: -40.391846, y: 1.8730164, z: -40.92106}
+  m_LocalRotation: {x: 0.1254789, y: 2.6492376e-11, z: -3.350717e-12, w: 0.9920963}
+  m_LocalPosition: {x: -40.404846, y: 1.5410156, z: -40.94706}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10984,8 +10986,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 621729884}
-  m_Follow: {fileID: 621729884}
+  m_LookAt: {fileID: 456827955}
+  m_Follow: {fileID: 456827955}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 10
@@ -11020,8 +11022,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099188784}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1254789, y: 0.000000029566777, z: -0.000000003739563, w: 0.9920963}
-  m_LocalPosition: {x: -40.391846, y: 1.8730164, z: -40.92106}
+  m_LocalRotation: {x: 0.1254789, y: 2.7764416e-11, z: -1.3408079e-11, w: 0.9920963}
+  m_LocalPosition: {x: -40.404846, y: 1.5410156, z: -40.94706}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
