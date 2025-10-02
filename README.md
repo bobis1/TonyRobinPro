@@ -6,3 +6,6 @@ WASD: Movement.
 R: Tricks(just rotates you).
 UpArrowKey:Switch Camera forward.
 BackArrowKey: Switch Camera Back(Default).
+
+## Please Note
+This is a MVP right now. Currently the timer is under construction it should still work but it has decimal points.
