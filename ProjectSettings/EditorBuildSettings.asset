@@ -5,19 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/code-race/Race.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/code-race/Lose.unity
-    guid: ed9f65477e3628c4f920008123dca666
-  - enabled: 0
-    path: Assets/Scenes/code-race/Win.unity
-    guid: 4186bb4162dbcd0429b296a6e3b1b31a
-  - enabled: 0
-    path: Assets/Scenes/offroad.unity
-    guid: f36fda02ca05d844ba23ac3dfcc4763d
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: ef976b6deecbf92468e9150f1618e06b
   - enabled: 1
     path: Assets/Scenes/offroad 1.unity
     guid: 502bf6501c2a244b4b795d9da6853e99
+  - enabled: 1
+    path: Assets/Scenes/offroad 2.unity
+    guid: fef901b54a24f264eb6a04de3f9d6bdf
+  - enabled: 1
+    path: Assets/Scenes/offroad 3.unity
+    guid: cc99e4a06e1761f43bb9e2bc838abd2c
   m_configObjects: {}
