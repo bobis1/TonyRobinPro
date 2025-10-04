@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build.Content;
 using UnityEngine;
 using TMPro;
 using System;
-using UnityEditor.Experimental.GraphView;
 
 public class coinScript : MonoBehaviour
 {
@@ -25,7 +23,7 @@ public class coinScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "coin")
         {
-            score++;
+            score +=1000;
             Destroy(collision.gameObject);
             string scoreString = score.ToString();
             scoreUi.text = scoreString;

@@ -24,13 +24,13 @@ public class spawnMenu : MonoBehaviour
         {
             if (isMenuOpen == false)
             {
-            menu.SetActive(true);
-            isMenuOpen = true;
+                menu.SetActive(true);
+                isMenuOpen = true;
             }
-        else if (isMenuOpen == true)
+            else if (isMenuOpen == true)
             {
-            menu.SetActive(false);
-            isMenuOpen = false;
+                menu.SetActive(false);
+                isMenuOpen = false;
             }
         }
     }
@@ -50,6 +50,18 @@ public class spawnMenu : MonoBehaviour
     public void Barrel()
     {
         GameObject obj = Objects[0];
+        Instantiate(obj, player.transform.position, player.transform.rotation);
+        obj.SetActive(true);
+    }
+    public void Rocket()
+    {
+        GameObject obj = Objects[1];
+        Instantiate(obj, player.transform.position, player.transform.rotation);
+        obj.SetActive(true);
+    }
+    public void Puppet()
+    {
+        GameObject obj = Objects[2];
         Instantiate(obj, player.transform.position, player.transform.rotation);
         obj.SetActive(true);
     }
