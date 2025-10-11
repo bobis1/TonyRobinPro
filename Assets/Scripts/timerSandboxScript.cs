@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.SocialPlatforms.Impl;
 using System.Security;
 using System.Threading;
+using UnityEngine.SceneManagement;
 public class timerSandboxScript : MonoBehaviour
 {
     public TextMeshProUGUI timerUI;
@@ -24,7 +25,7 @@ public class timerSandboxScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (scoreScript.score == coins.Length)
+        if (scoreScript.score == coins.Length * 1000)
         {
             int multiplier = 2;
             if (timer >= 60)
@@ -38,6 +39,7 @@ public class timerSandboxScript : MonoBehaviour
             scoreScript.score = scoreScript.score * multiplier;
             string scoreString = scoreScript.score.ToString();
             scoreUi.text = scoreString;
+            Invoke(nameof(goToMenu), 5.0f);
         }
         if (timer > 0)
         {
@@ -50,5 +52,9 @@ public class timerSandboxScript : MonoBehaviour
         {
             timer = 0;
         }
+    }
+    void goToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
