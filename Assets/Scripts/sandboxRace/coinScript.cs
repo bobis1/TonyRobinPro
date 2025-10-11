@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build.Content;
 using UnityEngine;
 using TMPro;
 using System;
-using UnityEditor.Experimental.GraphView;
 
 public class coinScript : MonoBehaviour
 {
