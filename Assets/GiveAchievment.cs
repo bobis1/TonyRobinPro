@@ -24,7 +24,7 @@ public class GiveAchievment : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        PlayerPrefs.SetInt("Touch Box", achivements["Touch Box"]);
+        PlayerPrefs.SetString("Touch Box", achivements["Touch Box"].ToString());
     
     }
 }

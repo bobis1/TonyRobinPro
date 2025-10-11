@@ -9321,9 +9321,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 195820545}
-  rotationSpeed: 15
-  bottomClamp: -400
-  topClamp: 400
+  rotationSpeed: 20
+  bottomClamp: -450
+  topClamp: 450
 --- !u!1001 &1124997706
 PrefabInstance:
   m_ObjectHideFlags: 0
