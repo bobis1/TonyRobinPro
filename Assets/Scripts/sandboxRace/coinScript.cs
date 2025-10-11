@@ -24,7 +24,7 @@ public class coinScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "coin")
         {
-            score++;
+            score += 1000;
             Destroy(collision.gameObject);
             string scoreString = score.ToString();
             scoreUi.text = scoreString;
