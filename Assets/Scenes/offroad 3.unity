@@ -3908,7 +3908,7 @@ PrefabInstance:
       objectReference: {fileID: 1641223390}
     - target: {fileID: 3658371396146148799, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: topClamp
-      value: 5000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 3658371396146148799, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: playerJump
@@ -3916,7 +3916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658371396146148799, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: bottomClamp
-      value: -100
+      value: -500
       objectReference: {fileID: 0}
     - target: {fileID: 3658371396146148799, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: rotationSpeed
