@@ -39,6 +39,7 @@ public class timerSandboxScript : MonoBehaviour
             scoreScript.score = scoreScript.score * multiplier;
             string scoreString = scoreScript.score.ToString();
             scoreUi.text = scoreString;
+            PlayerPrefs.SetString("scoreString", scoreString);
             Invoke(nameof(goToMenu), 5.0f);
         }
         if (timer > 0)

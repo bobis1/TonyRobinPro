@@ -24,10 +24,11 @@ public class coinScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "coin")
         {
-            score +=1000;
+            score += 1000;
             Destroy(collision.gameObject);
             string scoreString = score.ToString();
             scoreUi.text = scoreString;
+            PlayerPrefs.SetString("scoreString" ,scoreString);
         }
     }
 }
