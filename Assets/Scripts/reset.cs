@@ -4,14 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class reset : MonoBehaviour
-{    // Start is called before the first frame update
+{
+    [SerializeField] private int scene;    // Start is called before the first frame update
     void Start()
     {
         
     }
     public void Reset()
     {
-       SceneManager.LoadScene(1);
+       SceneManager.LoadScene(scene);
 
     }
 
