@@ -29,7 +29,7 @@ public class GiveAchievment : MonoBehaviour
         {
             PlayerPrefs.SetString(names[achievementToGive] , achivements["Touch Box"].ToString());
             if (names[achievementToGive] == "Touch Box") {
-                Debug.Log("");
+                Debug.Log(names[achievementToGive]);
             }
         }
 
