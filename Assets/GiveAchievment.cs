@@ -6,13 +6,14 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GiveAchievment : MonoBehaviour
 {
-    private string[] names = { "Touch Box", "get 10000 score", "freeBird!!!", "go to the hole"}; 
+    [SerializeField] private int achievementToGive;
+    [SerializeField ]private string[] names = { "Touch Box", "get 10000 score", "freeBird!!!", "go to the hole"}; 
     Dictionary<string, bool> achivements = new Dictionary<string, bool>();
 
     // Start is called before the first frame update
     void Awake()
     {
-        for (int i = 0; i < names.Length; i++) { 
+        for (int i = 0; i < names.Length; i++) {
             achivements.Add(names[i], false);
         }
     }
@@ -24,7 +25,13 @@ public class GiveAchievment : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        PlayerPrefs.SetString("Touch Box", achivements["Touch Box"].ToString());
-    
+        if(collision.gameObject.tag == "Player")
+        {
+            PlayerPrefs.SetString(names[achievementToGive] , achivements["Touch Box"].ToString());
+            if (names[achievementToGive] == "Touch Box") {
+                Debug.Log("");
+            }
+        }
+
     }
 }

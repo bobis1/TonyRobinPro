@@ -32,19 +32,31 @@ public class CodeyMove : MonoBehaviour
 
         if (canMove)
         {
+            if (isGrounded)
+            {
+                float vertical = Input.GetAxis("Vertical");
+                float horizontal = Input.GetAxis("Horizontal");
+                Vector3 rotation = new Vector3(0, horizontal * _rotationSpeed * Time.deltaTime, 0);
+                move = transform.forward * speed * Time.deltaTime * vertical;
+                transform.Rotate(rotation);
+                rb.AddForce(move, ForceMode.VelocityChange);
+            }
+            else
+            {
+                float vertical = Input.GetAxis("Vertical");
+                float horizontal = Input.GetAxis("Horizontal");
+                Vector3 rotation = new Vector3(0, horizontal * _rotationSpeed * Time.deltaTime, 0);
+                move = transform.forward * speed/3 * Time.deltaTime * vertical;
+                transform.Rotate(rotation);
+                rb.AddForce(move, ForceMode.VelocityChange);
+            }
 
-            float vertical = Input.GetAxis("Vertical");
-            float horizontal = Input.GetAxis("Horizontal");
-            Vector3 rotation = new Vector3(0, horizontal * _rotationSpeed * Time.deltaTime, 0);
-            move = transform.forward * speed * Time.deltaTime * vertical;
-            transform.Rotate(rotation);
-            rb.AddForce(move, ForceMode.VelocityChange);
 
             //anim.SetBool("isRunning", move != Vector3.zero);
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (isGrounded == true)
+            if (isGrounded)
             {
                 rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
             }
