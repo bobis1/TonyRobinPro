@@ -6,7 +6,10 @@ using TMPro;
 
 public class dialougeScript : MonoBehaviour
 {
-    public TextMeshPro dialougeBox;
+    public TextMeshProUGUI dialougeBox;
+    public GameObject dialougeCanvas;
+
+    public GameObject backgroundCanvas;
     public string dialouge;
     // Start is called before the first frame update
     void Start()
@@ -21,10 +24,16 @@ public class dialougeScript : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        dialougeBox.text = dialouge;
+        if(other.gameObject.tag == "Player")
+        {
+            backgroundCanvas.SetActive(true);
+            dialougeCanvas.SetActive(true);
+            dialougeBox.text = dialouge;
+        }
     }
     void OnTriggerExit(Collider other)
     {
-        dialougeBox.text = "";
+        backgroundCanvas.SetActive(false);
+        dialougeCanvas.SetActive(false);
     }
 }
