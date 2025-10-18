@@ -3121,8 +3121,8 @@ MonoBehaviour:
   m_BindingMode: 1
   m_FollowOffset: {x: 0, y: 2.07, z: -4.68}
   m_XDamping: 0
-  m_YDamping: 0.1
-  m_ZDamping: 0.1
+  m_YDamping: 0
+  m_ZDamping: 0
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 0
@@ -3413,7 +3413,7 @@ MonoBehaviour:
   menu: {fileID: 1559553273}
   Objects:
   - {fileID: 2769546214657203974, guid: a53f22067e6ca4020aeb13ba57244497, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 1036001986}
   isMenuOpen: 0
 --- !u!4 &904003715
 Transform:
@@ -3709,6 +3709,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.17783856
       objectReference: {fileID: 0}
+    - target: {fileID: 7415769012139610485, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 09d0bb3a755d1cd47830be23643e9526, type: 2}
     - target: {fileID: 8435034949802686211, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -10323,6 +10327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94f91ae27dd5634ead25dc81c948752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 0
 --- !u!114 &1459784852
 MonoBehaviour:
   m_ObjectHideFlags: 0

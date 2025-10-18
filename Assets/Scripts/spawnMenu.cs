@@ -53,15 +53,9 @@ public class spawnMenu : MonoBehaviour
         Instantiate(obj, player.transform.position, player.transform.rotation);
         obj.SetActive(true);
     }
-    public void Rocket()
-    {
-        GameObject obj = Objects[1];
-        Instantiate(obj, player.transform.position, player.transform.rotation);
-        obj.SetActive(true);
-    }
     public void Puppet()
     {
-        GameObject obj = Objects[2];
+        GameObject obj = Objects[1];
         Instantiate(obj, player.transform.position, player.transform.rotation);
         obj.SetActive(true);
     }
