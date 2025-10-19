@@ -6,6 +6,8 @@ WASD: Movement.
 R: Tricks(just rotates you).
 UpArrowKey:Switch Camera forward.
 BackArrowKey: Switch Camera Back(Default).
+E, add drag to your player
+F, Removes Drag from player
 
 ## Please Note
-This is a MVP right now. Currently the timer is under construction it should still work but it has decimal points.
+This is a MVP right now.
