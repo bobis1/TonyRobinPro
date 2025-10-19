@@ -14,12 +14,18 @@ public class BrakeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
+                playerRb.drag++;
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if(playerRb.drag >= 0)
+            {
+                playerRb.drag--;
+            }
+        }
 
-            playerRb.drag++;
-            
-        }
-        }
     }
+}
 
