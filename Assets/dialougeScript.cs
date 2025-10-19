@@ -33,6 +33,10 @@ public class dialougeScript : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
+        ExitButton();
+    }
+    public void ExitButton()
+    {
         backgroundCanvas.SetActive(false);
         dialougeCanvas.SetActive(false);
     }
