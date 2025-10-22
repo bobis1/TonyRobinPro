@@ -71,5 +71,6 @@ public class AirPlaneScript : MonoBehaviour
     {
         isGrounded = true;
         airTime = 0;
+        Debug.Log("Entering Collision Works");
     }
 }
