@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class BrakeScript : MonoBehaviour
 {
+    public float increment;
     public Rigidbody playerRb;
+
+    public TMP_Text drag;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,18 +20,24 @@ public class BrakeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKey(KeyCode.E))
         {
-                playerRb.drag++;
+            playerRb.drag += increment;
         }
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKey(KeyCode.F))
         {
-            if(playerRb.drag >= 0)
+            if (playerRb.drag >= 0)
             {
-                playerRb.drag--;
+                playerRb.drag -= increment;
             }
         }
+        drag.text = playerRb.drag.ToString();
 
+    }
+
+    public void resetDrag()
+    {
+        playerRb.drag = 0.35f;
     }
 }
 

@@ -3951,6 +3951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AchievementsMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 4690961529178096386, guid: a780b0df84f3b314d9d8493571dd3821, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
