@@ -2114,6 +2114,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9873bc41052c48b5929b75ef7bf41a2, type: 3}
+--- !u!1 &439922513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5167526836080122362, guid: c34d5dcb40560624487c27c137604850, type: 3}
+  m_PrefabInstance: {fileID: 1084448276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &439922517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439922513}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.030000001, y: 0.059534907, z: 0.007000001}
+  m_Center: {x: -0.0007361998, y: 0.0007983503, z: 0.00055968174}
 --- !u!1 &451232778
 GameObject:
   m_ObjectHideFlags: 0
@@ -9644,6 +9670,10 @@ PrefabInstance:
       propertyPath: scoreUi
       value: 
       objectReference: {fileID: 1481591103}
+    - target: {fileID: 1758271005183665992, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 09d0bb3a755d1cd47830be23643e9526, type: 2}
     - target: {fileID: 1998614439945055265, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: player
       value: 
@@ -9811,6 +9841,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2827676459716556247, guid: c34d5dcb40560624487c27c137604850, type: 3}
     - {fileID: 3123429806075836011, guid: c34d5dcb40560624487c27c137604850, type: 3}
+    - {fileID: 1758271005183665992, guid: c34d5dcb40560624487c27c137604850, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7261128996694971027, guid: c34d5dcb40560624487c27c137604850, type: 3}
     - {fileID: 8435034949802686211, guid: c34d5dcb40560624487c27c137604850, type: 3}
@@ -9845,6 +9876,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2907322960810508011, guid: c34d5dcb40560624487c27c137604850, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1084448290}
+    - targetCorrespondingSourceObject: {fileID: 5167526836080122362, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 439922517}
   m_SourcePrefab: {fileID: 100100000, guid: c34d5dcb40560624487c27c137604850, type: 3}
 --- !u!1 &1084448277 stripped
 GameObject:
