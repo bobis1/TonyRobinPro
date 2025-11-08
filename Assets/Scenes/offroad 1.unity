@@ -9678,10 +9678,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1084448277}
-    - target: {fileID: 2596417673812842013, guid: c34d5dcb40560624487c27c137604850, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2827676459716556247, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: bombRocketTransform
       value: 
@@ -11018,7 +11014,6 @@ GameObject:
   - component: {fileID: 1459784851}
   - component: {fileID: 1459784852}
   - component: {fileID: 1459784853}
-  - component: {fileID: 1459784854}
   - component: {fileID: 1459784854}
   m_Layer: 0
   m_Name: GameManager
@@ -13698,14 +13693,12 @@ GameObject:
   - component: {fileID: 2106772953}
   - component: {fileID: 2106772952}
   - component: {fileID: 2106772957}
-  - component: {fileID: 2106772957}
   m_Layer: 0
   m_Name: achievmentGiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
   m_IsActive: 1
 --- !u!114 &2106772952
 MonoBehaviour:
@@ -13719,8 +13712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96378c60d3530cc46933fb416e29ef3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AchievementManager: {fileID: 1459784854}
-  achievementName: Touch Box
+  AchievementManager: {fileID: 0}
+  achievementName: 
 --- !u!65 &2106772953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13821,23 +13814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   achievementName: Touch Box
   isCollected: 0
-  image: {fileID: 0}
-  nonCollectedImage: {fileID: 0}
---- !u!114 &2106772957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106772951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6ab80ff5a86ca345ba6a3290181bba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  achievementName: Touch Box
-  isCollected: 0
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 4e3383ea0536c4847be268d64b3feb09, type: 3}
   nonCollectedImage: {fileID: 0}
 --- !u!1 &2137781720
 GameObject:
