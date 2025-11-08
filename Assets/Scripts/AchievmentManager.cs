@@ -1,34 +1,65 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 
 public class AchievmentManager : MonoBehaviour
 {
-    public List<Achievement> achievementObjs = new List<Achievement>();
-
-    Dictionary<string, bool> achivements = new Dictionary<string, bool>();
+    public List<Achievement> achievements = new List<Achievement>();
 
 
+    public bool deletePrefs = false;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        for (int i = 0; i < achievementObjs.Count; i++)
-        {
-            achivements.Add(achievementObjs[i].name, achievementObjs[i].isCollected);
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (deletePrefs)
+
+        {
+            DeletePlayerPrefs();
+            deletePrefs = false;
+        }
     }
 
-    public void UpdateAchievement(string achievementName, bool isCollected)
+    public void UnlockAchievment(Achievement achievement)
     {
-        achivements[achievementName] = isCollected;
+        achievement.isCollected = true;
+        Save();
+    }
+    public void Save()
+    {
+        for(int i = 0; i < achievements.Count; i++)
+        {
+            PlayerPrefs.SetInt(achievements[i].name, ConvertBoolToInt(achievements[i].isCollected));
+        }
+        PlayerPrefs.Save();
     }
 
+    public void Load() {
+        for (int i = 0; i < achievements.Count; i++)
+        {
+            achievements[i].isCollected = ConvertIntToBool(PlayerPrefs.GetInt(achievements[i].name));
+        }
+    }
+
+
+    private int ConvertBoolToInt(bool b)
+    {
+        return (b ? 1 : 0);
+    }
+
+    private bool ConvertIntToBool(int i)
+    {
+        return (i == 0 ? false : true);
+    }
+
+    public void DeletePlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }

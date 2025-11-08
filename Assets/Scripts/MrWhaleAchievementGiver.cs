@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
-public class GiveAchievment : MonoBehaviour
+public class MrWhaleAchievementGiver : MonoBehaviour
 {
+    // Start is called before the first frame update
     public AchievmentManager AchievementManager;
     public Achievement achievement;
 
@@ -19,17 +18,17 @@ public class GiveAchievment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             achievement.isCollected = true;
             AchievementManager.UnlockAchievment(achievement);
             Debug.Log(PlayerPrefs.GetString(achievement.achievementName));
 
         }
-
     }
-}
+       
+    }

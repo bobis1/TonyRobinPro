@@ -9,9 +9,9 @@ public class AchievmentShow : AchievmentManager
     // Start is called before the first frame update
     void Start()
     {
-        touchBox.SetActive(false);
+        
     }
-
+    
     // Update is called once per frame
     void Update()
     {
