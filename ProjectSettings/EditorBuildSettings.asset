@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/offroad 4.unity
     guid: 9097d69e2f6fd4a54bda7f56ae78d54d
+  - enabled: 1
+    path: Assets/Scenes/offroad 5.unity
+    guid: 5de4a2205f36b3844872e7f0d4ab4c90
   m_configObjects: {}

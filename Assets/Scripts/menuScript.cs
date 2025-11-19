@@ -25,8 +25,12 @@ public class menuScript : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+    public void loadPark()
+    {
+        SceneManager.LoadScene(5);
+    }
 
-        public void switchToMapSelect()
+    public void switchToMapSelect()
     {
         if (!isOnMapSelect)
         {
