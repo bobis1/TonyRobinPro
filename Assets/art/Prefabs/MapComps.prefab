@@ -7094,7 +7094,7 @@ Transform:
   m_GameObject: {fileID: 3921856910316471306}
   serializedVersion: 2
   m_LocalRotation: {x: 0.14347878, y: -2.2754822e-29, z: 3.298967e-30, w: 0.9896534}
-  m_LocalPosition: {x: -40.391846, y: 2.9543953, z: 84.50262}
+  m_LocalPosition: {x: 240.93744, y: 325.7481, z: 110.02928}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9847,6 +9847,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 7406073352709124779}
+    - target: {fileID: 2351953184367686576, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: scoreUi
+      value: 
+      objectReference: {fileID: 3313486017443104050}
     - target: {fileID: 2827676459716556247, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: bombRocketTransform
       value: 
@@ -9931,6 +9935,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6346596469101466692, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: scoreUi
+      value: 
+      objectReference: {fileID: 3313486017443104050}
     - target: {fileID: 6930270699303946842, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: m_IsActive
       value: 0

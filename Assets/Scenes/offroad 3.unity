@@ -1869,7 +1869,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065873187}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: df9d7b17a8c2b2c4a8c27dcbe5c57d46, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3242,6 +3242,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 850804980231556831, guid: f9873bc41052c48b5929b75ef7bf41a2, type: 3}
   m_PrefabInstance: {fileID: 221011851}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1627248130 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3313486017443104050, guid: 33530ae27707c5e49815b550c1418d29, type: 3}
+  m_PrefabInstance: {fileID: 2036292064}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1659216615
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,6 +3887,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803646469}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1808765658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8387543881164875001, guid: 33530ae27707c5e49815b550c1418d29, type: 3}
+  m_PrefabInstance: {fileID: 2036292064}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1881010040
 GameObject:
   m_ObjectHideFlags: 0
@@ -4091,10 +4113,18 @@ PrefabInstance:
       propertyPath: scene
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1624930237237057540, guid: 33530ae27707c5e49815b550c1418d29, type: 3}
+      propertyPath: scoreUi
+      value: 
+      objectReference: {fileID: 1627248130}
     - target: {fileID: 4950266326966049715, guid: 33530ae27707c5e49815b550c1418d29, type: 3}
       propertyPath: m_Name
       value: MapComps
       objectReference: {fileID: 0}
+    - target: {fileID: 7943393546266050544, guid: 33530ae27707c5e49815b550c1418d29, type: 3}
+      propertyPath: scoreUi
+      value: 
+      objectReference: {fileID: 1808765658}
     - target: {fileID: 8921963460849795115, guid: 33530ae27707c5e49815b550c1418d29, type: 3}
       propertyPath: m_LocalPosition.x
       value: 71.71929
