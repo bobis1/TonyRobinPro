@@ -7,6 +7,8 @@ public class RotateCorrection : MonoBehaviour
     public GameObject player;
 
     private bool isRotating;
+
+    private bool isGrounded;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +22,10 @@ public class RotateCorrection : MonoBehaviour
 
     IEnumerator RotateImage()
     {
+        if (!isGrounded)
+        {
         isRotating = true;
-        float moveSpeed = 0.01f;
+        float moveSpeed = 0.001f;
         float X = 4.614f;
         while (player.transform.rotation.x < X)
         {
@@ -32,5 +36,21 @@ public class RotateCorrection : MonoBehaviour
         yield return null;
 
         isRotating  = false;
+        }
+        
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "terrain")
+        {
+            isGrounded = true;
+        }
+    }
+    void OnCollisionExit(Collision collision)
+    {
+        if(collision.gameObject.tag == "terrain")
+        {
+            isGrounded = false;
+        }
     }
 }
