@@ -225,7 +225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9bcc56b874876843b1fc9552f0ba5c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  achievements: []
+  achievements:
+  - {fileID: 11400000, guid: 26cc3a05c4bfe8e46abae89a826618f2, type: 2}
+  - {fileID: 11400000, guid: ee1012a32fcd63145af6af8574b62795, type: 2}
   deletePrefs: 0
 --- !u!1 &925078446720009323
 GameObject:
@@ -7010,8 +7012,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3921856910316471306}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14555828, y: -1.8503111e-28, z: 2.7222743e-29, w: 0.9893497}
-  m_LocalPosition: {x: 1802.9375, y: 325.7481, z: 110.02928}
+  m_LocalRotation: {x: 0.1434856, y: 0, z: 0, w: 0.98965245}
+  m_LocalPosition: {x: -40.391846, y: 2.9543953, z: 84.502625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9285,7 +9287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8845002732470803062}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14348555, y: 0.0000000147469725, z: -0.0000000021381015, w: 0.98965245}
+  m_LocalRotation: {x: 0.14348558, y: -0, z: -0, w: 0.98965245}
   m_LocalPosition: {x: -40.391846, y: 2.9543953, z: 84.502625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9460,6 +9462,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4447271952811905796, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 7406073352709124779}
     - target: {fileID: 5846383170689065800, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -9553,9 +9559,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 2827676459716556247, guid: c34d5dcb40560624487c27c137604850, type: 3}
-    - {fileID: 3123429806075836011, guid: c34d5dcb40560624487c27c137604850, type: 3}
-    - {fileID: 1758271005183665992, guid: c34d5dcb40560624487c27c137604850, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 565301410071011220, guid: c34d5dcb40560624487c27c137604850, type: 3}
+    - {fileID: 3658371396146148799, guid: c34d5dcb40560624487c27c137604850, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7261128996694971027, guid: c34d5dcb40560624487c27c137604850, type: 3}
     - {fileID: 8435034949802686211, guid: c34d5dcb40560624487c27c137604850, type: 3}

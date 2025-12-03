@@ -16,8 +16,7 @@ public class CodeyMove : MonoBehaviour
     public Vector3 move;
     public float _rotationSpeed = 50f;
     private Rigidbody rb;
-    public GameObject backWheelLeft;
-    public GameObject backWheelRight;
+    public GameObject Player;
 
 
 
@@ -62,7 +61,10 @@ public class CodeyMove : MonoBehaviour
                 rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
             }
         }
-
+        if (Input.GetKeyDown(KeyCode.T)) { 
+            Player.transform.rotation = Quaternion.identity;
+            rb.AddForce(transform.up * playerJump * 2, ForceMode.Impulse);
+        }
 
     }
     void OnCollisionEnter(Collision collision)

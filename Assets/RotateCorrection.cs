@@ -6,9 +6,9 @@ public class RotateCorrection : MonoBehaviour
 {
     public GameObject player;
 
-    private bool isRotating;
+    public bool isRotating;
 
-    private bool isGrounded;
+    public bool isGrounded;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,13 +27,11 @@ public class RotateCorrection : MonoBehaviour
         isRotating = true;
         float moveSpeed = 0.001f;
         float X = 4.614f;
-        while (player.transform.rotation.x < X)
+        while (player.transform.rotation.x != X)
         {
             player.transform.rotation = Quaternion.Slerp(player.transform.rotation, Quaternion.Euler(4.614f, player.transform.rotation.y, player.transform.rotation.z), moveSpeed * Time.time);
             yield return null;
         }
-        player.transform.rotation = Quaternion.Euler(4.614f, player.transform.rotation.y, player.transform.rotation.z);
-        yield return null;
 
         isRotating  = false;
         }
