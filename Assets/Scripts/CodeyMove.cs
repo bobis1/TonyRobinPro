@@ -29,9 +29,6 @@ public class CodeyMove : MonoBehaviour
     }
     void FixedUpdate()
     {
-
-        if (canMove)
-        {
             if (isGrounded)
             {
                 float vertical = Input.GetAxis("Vertical");
@@ -53,7 +50,7 @@ public class CodeyMove : MonoBehaviour
 
 
             //anim.SetBool("isRunning", move != Vector3.zero);
-        }
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isGrounded)
@@ -63,7 +60,9 @@ public class CodeyMove : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.T)) { 
             Player.transform.rotation = Quaternion.identity;
-            rb.AddForce(transform.up * playerJump * 2, ForceMode.Impulse);
+            Vector3 playerPose = Player.transform.position;
+            playerPose.y += 10;
+            Player.transform.position = playerPose;
         }
 
     }

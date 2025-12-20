@@ -3119,7 +3119,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4818,7 +4818,7 @@ PrefabInstance:
     - target: {fileID: 1736232725105019922, guid: a780b0df84f3b314d9d8493571dd3821, type: 3}
       propertyPath: nonCollectedImage
       value: 
-      objectReference: {fileID: 21300000, guid: 0a31d5a7afc514e89aa285a5aedc28af, type: 3}
+      objectReference: {fileID: 21300000, guid: 9be0f9421eb605d4f81f5aa61b2385fc, type: 3}
     - target: {fileID: 4690961529178096386, guid: a780b0df84f3b314d9d8493571dd3821, type: 3}
       propertyPath: m_Name
       value: AchievementsMenu
