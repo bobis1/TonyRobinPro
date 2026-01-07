@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class AirPlaneScript : MonoBehaviour
+public class FreeBird : MonoBehaviour
 {
     public GameObject freeBird;
 
@@ -45,13 +45,7 @@ public class AirPlaneScript : MonoBehaviour
                     boomBox.Play();
                 }
             }
-            if(trickScript.isTricking)
-            {
-                coinScript.score += ((int)airTime)/2 + 5;
-                string scoreString = coinScript.score.ToString();
-                scoreUi.text = scoreString;
-                PlayerPrefs.SetString("scoreString", scoreString);
-            }
+
         } 
         else
         {
