@@ -54,16 +54,6 @@ public class trickScript : MonoBehaviour
             isTricking = false;
             transform.rotation = Quaternion.identity;
         }
-        if (isTricking)
-        {
-            totalRot += rb.angularVelocity.y * Time.fixedDeltaTime;
-            totalRot += rb.angularVelocity.x * Time.fixedDeltaTime;
-            totalRot += rb.angularVelocity.z * Time.fixedDeltaTime;
-            coinScript.score += Math.Abs(Mathf.RoundToInt(totalRot));
-            string scoreString = coinScript.score.ToString();
-            scoreUi.text = scoreString;
-            PlayerPrefs.SetString("scoreString", scoreString);
-        }
 
         
 
