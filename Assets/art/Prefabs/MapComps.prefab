@@ -5798,8 +5798,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3921856910316471306}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1434856, y: 0, z: 0, w: 0.98965245}
-  m_LocalPosition: {x: -40.391846, y: -2.8218842, z: 84.502625}
+  m_LocalRotation: {x: 0.14663762, y: -0.14898248, z: 0.022345835, w: 0.9776514}
+  m_LocalPosition: {x: -38.83609, y: -2.859455, z: 84.75902}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7347,6 +7347,10 @@ PrefabInstance:
       propertyPath: scoreUi
       value: 
       objectReference: {fileID: 3313486017443104050}
+    - target: {fileID: 3509177594257257128, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: trickScript
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3658371396146148799, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: speed
       value: 120
@@ -7387,6 +7391,14 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3996959200185421864, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: m_InertiaRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385104788920603475, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: GroundedScript
+      value: 
+      objectReference: {fileID: 1624930237237057540}
     - target: {fileID: 4423606274537952325, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7395,6 +7407,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 7406073352709124779}
+    - target: {fileID: 4447271952811905796, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5846383170689065800, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7411,6 +7427,10 @@ PrefabInstance:
       propertyPath: scoreUi
       value: 
       objectReference: {fileID: 3313486017443104050}
+    - target: {fileID: 6346596469101466692, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: trickScript
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6930270699303946842, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7447,6 +7467,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8522965752359556324, guid: c34d5dcb40560624487c27c137604850, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 8784068328484035688}
     - target: {fileID: 8522965752359556324, guid: c34d5dcb40560624487c27c137604850, type: 3}
       propertyPath: isTricking
       value: 0
@@ -7499,6 +7523,8 @@ PrefabInstance:
     - {fileID: 3658371396146148799, guid: c34d5dcb40560624487c27c137604850, type: 3}
     - {fileID: 2340399479301965456, guid: c34d5dcb40560624487c27c137604850, type: 3}
     - {fileID: 4122513174630308267, guid: c34d5dcb40560624487c27c137604850, type: 3}
+    - {fileID: 8522965752359556324, guid: c34d5dcb40560624487c27c137604850, type: 3}
+    - {fileID: 4385104788920603475, guid: c34d5dcb40560624487c27c137604850, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7261128996694971027, guid: c34d5dcb40560624487c27c137604850, type: 3}
     - {fileID: 8435034949802686211, guid: c34d5dcb40560624487c27c137604850, type: 3}
@@ -7523,11 +7549,22 @@ PrefabInstance:
       addedObject: {fileID: 7631466075303200844}
     - targetCorrespondingSourceObject: {fileID: 2907322960810508011, guid: c34d5dcb40560624487c27c137604850, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4228453959257413879}
+      addedObject: {fileID: 7672383714494497678}
     - targetCorrespondingSourceObject: {fileID: 2907322960810508011, guid: c34d5dcb40560624487c27c137604850, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7672383714494497678}
+      addedObject: {fileID: 934737875994457827}
   m_SourcePrefab: {fileID: 100100000, guid: c34d5dcb40560624487c27c137604850, type: 3}
+--- !u!114 &1624930237237057540 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6346596469101466692, guid: c34d5dcb40560624487c27c137604850, type: 3}
+  m_PrefabInstance: {fileID: 5665328967151045696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7406073352709124779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e830ca366ff484d9b20fb1d3d4b1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3789852049252188664 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8793006650458000824, guid: c34d5dcb40560624487c27c137604850, type: 3}
@@ -7552,7 +7589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   freeBird: {fileID: 2476899911007991972}
   coinScript: {fileID: 7631466075303200844}
-  trickScript: {fileID: 4228453959257413879}
+  trickScript: {fileID: 0}
   scoreUi: {fileID: 3313486017443104050}
   boomBox: {fileID: 3085566113511172398}
   freedBirdLoudAudioClip: {fileID: 8300000, guid: 6a48e7609ca65104b914e859f28d3386, type: 3}
@@ -7574,20 +7611,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreUi: {fileID: 3313486017443104050}
---- !u!114 &4228453959257413879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7406073352709124779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 084909c270d655e4da2dcc9a62ae472f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTricking: 0
-  player: {fileID: 7406073352709124779}
 --- !u!114 &7672383714494497678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7603,11 +7626,41 @@ MonoBehaviour:
   increment: 0.001
   playerRb: {fileID: 8784068328484035688}
   drag: {fileID: 1953396955997715133}
+--- !u!114 &934737875994457827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7406073352709124779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084909c270d655e4da2dcc9a62ae472f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTricking: 0
+  player: {fileID: 7406073352709124779}
+  GroundedScript: {fileID: 1624930237237057540}
+  totalRot: 0
+  rb: {fileID: 8784068328484035688}
+  scoreUi: {fileID: 3313486017443104050}
+  coinScript: {fileID: 7943393546266050544}
 --- !u!4 &7640125432506143451 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2636971071591423643, guid: c34d5dcb40560624487c27c137604850, type: 3}
   m_PrefabInstance: {fileID: 5665328967151045696}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7943393546266050544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2351953184367686576, guid: c34d5dcb40560624487c27c137604850, type: 3}
+  m_PrefabInstance: {fileID: 5665328967151045696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7406073352709124779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d08f47ff3cb427aaadee4adc0eb9a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &8784068328484035688 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 3996959200185421864, guid: c34d5dcb40560624487c27c137604850, type: 3}

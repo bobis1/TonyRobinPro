@@ -20,7 +20,7 @@ public class BrakeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.R))
         {
             playerRb.drag += increment;
         }
