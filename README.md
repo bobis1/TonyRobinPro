@@ -4,10 +4,5 @@ You can also do tricks by holding R. There are no real objectives with this game
 ## Controls:
 WASD: Movement.
 R: Tricks(just rotates you).
-UpArrowKey:Switch Camera forward.
-BackArrowKey: Switch Camera Back(Default).
 E, add drag to your player
 F, Removes Drag from player
-
-## Please Note
-This is a MVP right now.
