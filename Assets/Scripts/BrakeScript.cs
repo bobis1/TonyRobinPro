@@ -22,13 +22,25 @@ public class BrakeScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.R))
         {
-            playerRb.drag += increment;
+            if(playerRb.drag <= 9)
+            {
+                playerRb.drag += increment;
+            }
+            else
+            {
+                playerRb.drag = 9;
+            }
+            
         }
         if (Input.GetKey(KeyCode.F))
         {
             if (playerRb.drag >= 0)
             {
                 playerRb.drag -= increment;
+            }
+            else
+            {
+                playerRb.drag = 0;
             }
         }
         drag.text = playerRb.drag.ToString();

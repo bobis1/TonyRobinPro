@@ -6,6 +6,7 @@ using UnityEngine.SocialPlatforms.Impl;
 using System.Security;
 using System.Threading;
 using UnityEngine.SceneManagement;
+using System;
 public class timerSandboxScript : MonoBehaviour
 {
     public TextMeshProUGUI timerUI;
@@ -45,7 +46,7 @@ public class timerSandboxScript : MonoBehaviour
         if (timer > 0)
         {
             timer -= Time.deltaTime;
-            string timerString = timer.ToString();
+            string timerString = Mathf.Round(timer).ToString();
             timerUI.text = timerString;
         }
 
